@@ -45,7 +45,7 @@ ynh_script_progression "Building $app..."
 
 pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app composer install
+	ynh_hide_warnings ynh_composer_exec install --no-dev
 	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
