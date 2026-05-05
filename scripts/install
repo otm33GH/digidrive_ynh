@@ -1,0 +1,61 @@
+#!/bin/bash
+
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+source /usr/share/yunohost/helpers
+
+
+#=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
+
+ynh_app_setting_set_default --key=php_upload_max_filesize --value=5G
+ynh_app_setting_set_default --key=php_post_max_size --value=5G
+
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression "Setting up source files..."
+
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir"
+
+#=================================================
+# APP INITIAL CONFIGURATION
+#=================================================
+ynh_script_progression "Adding $app's configuration files..."
+
+ynh_config_add --template=".env.production" --destination="$install_dir/.env.production"
+# patch old vite config with latest version
+ynh_config_add --template="vite.config.mjs" --destination="$install_dir/vite.config.mjs"
+
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+ynh_script_progression "Adding system configurations related to $app..."
+
+# Create a PHP-FPM config (with conf/extra_php-fpm.conf being appended to it)
+ynh_config_add_phpfpm
+
+# Create a dedicated NGINX config using the conf/nginx.conf template
+ynh_config_add_nginx
+
+#=================================================
+# BUILD APP
+#=================================================
+ynh_script_progression "Building $app..."
+
+pushd "$install_dir"
+	ynh_hide_warnings ynh_exec_as_app npm install
+	ynh_hide_warnings ynh_exec_as_app npm run build
+popd
+
+chown -R $app:www-data "$install_dir"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_script_progression "Installation of $app completed"
