@@ -61,8 +61,6 @@ ram.runtime = "50M"
     autoupdate.strategy = "latest_forgejo_release"
 
     [resources.system_user]
-
-    [resources.system_user]
 	allow_email = true
 
     [resources.install_dir]
