@@ -51,6 +51,8 @@ pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app npm install
 	ynh_hide_warnings ynh_exec_as_app composer install
 	ynh_hide_warnings ynh_exec_as_app npm run build
+	mv inc/digidrive_sample.db inc/digidrive.db
+
 popd
 
 chown -R $app:www-data "$install_dir"
