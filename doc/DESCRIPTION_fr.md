@@ -1,1 +1,1 @@
-Digiwords est une application en ligne simple pour créer des nuages de mots.
+Gérer les contenus créés avec les outils de La Digitale
