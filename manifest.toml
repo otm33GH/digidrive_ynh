@@ -2,22 +2,22 @@
 
 packaging_format = 2
 
-id = "digiquiz"
-name = "Digiquiz"
-description.en = "Publishing content created with H5P"
-description.fr = "Publier des contenus créés avec H5P"
+id = "digidrive"
+name = "Digidrive"
+description.en = "Publishing content created with La Digitale tools"
+description.fr = "Gérer les contenus créés avec les outils de La Digitale"
 
-version = "1.4.10~ynh1"
+version = "0.7.5~ynh1"
 
 maintainers = ["otm33GH"]
 
 [upstream]
 license = "AGPL-3.0-only"
 website = "https://ladigitale.dev/"
-demo = "https://ladigitale.dev/digiquiz/#/"
-admindoc = "https://codeberg.org/ladigitale/digiquiz#readme"
-userdoc = "https://ladigitale.dev/blog/digiquiz-pour-lire-et-partager-des-contenus-h5p-en-ligne"
-code = "https://codeberg.org/ladigitale/digiquiz"
+demo = "https://ladigitale.dev/digidrive/#/"
+admindoc = "https://codeberg.org/ladigitale/digidrive#readme"
+userdoc = "https://ladigitale.dev/blog/digidrive-pour-creer-et-gerer-les-contenus-generes-sur-la-digitale"
+code = "https://codeberg.org/ladigitale/digidrive"
 
 [integration]
 yunohost = ">= 12.1.38"
@@ -36,6 +36,10 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
+    [install.path]
+    type = "path"
+    default = "/digidrive"
+    
     [install.init_main_permission]
     type = "group"
     default = "visitors"
@@ -52,14 +56,20 @@ ram.runtime = "50M"
 
 [resources]
     [resources.sources.main]
-    url = "https://codeberg.org/ladigitale/digiquiz/archive/1.4.10.tar.gz"
-    sha256 = "c255f760f2039149d95ac277c1f1f00c39d2e5ca6dd731ac8b17acf53416be93"
+    url = "https://codeberg.org/ladigitale/digidrive/archive/0.7.5.tar.gz"
+    sha256 = "d07af0d09b530449d0fd465b19508796be91033e3f9ba1b5198db58982cc8da8"
     autoupdate.strategy = "latest_forgejo_release"
 
     [resources.system_user]
 
     [resources.install_dir]
     group = "www-data:r-x"
+
+    [install.password]
+    ask.en = "Please chose a password for the admin user."
+    ask.fr = "Choisissez un mot de passe pour l'administrateur."
+    type = "password"
+
 
     [resources.permissions]
     main.url = "/"
@@ -69,3 +79,6 @@ ram.runtime = "50M"
 
     [resources.nodejs]
     version = "24"
+
+    [resources.composer]
+    version = "2.9.3"
