@@ -13,6 +13,7 @@ source /usr/share/yunohost/helpers
 
 ynh_app_setting_set_default --key=php_upload_max_filesize --value=5G
 ynh_app_setting_set_default --key=php_post_max_size --value=5G
+email_smtp_host=$(cat /etc/yunohost/current_host)
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
