@@ -21,7 +21,7 @@ name.en = "digiboard"
     ask.en = "digiboard api url"
     type = "url"
     bind = "VITE_DIGIBOARD_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digibunch]
 name.en = "digibunch"
@@ -33,7 +33,7 @@ name.en = "digibunch"
     ask.en = "digibunch api url"
     type = "url"
     bind = "VITE_DIGIBUNCH_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digicalc]
 name.en = "digicalc"
@@ -45,7 +45,7 @@ name.en = "digicalc"
     ask.en = "digicalc api url"
     type = "url"
     bind = "VITE_DIGICALC_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digidiagram]
 name.en = "digidiagram"
@@ -57,7 +57,7 @@ name.en = "digidiagram"
     ask.en = "digidiagram api url"
     type = "url"
     bind = "VITE_DIGIDIAGRAM_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digidoc]
 name.en = "digidoc"
@@ -69,7 +69,7 @@ name.en = "digidoc"
     ask.en = "digidoc api url"
     type = "url"
     bind = "VITE_DIGIDOC_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiflashcards]
 name.en = "digiflashcards"
@@ -81,7 +81,7 @@ name.en = "digiflashcards"
     ask.en = "digiflashcards api url"
     type = "url"
     bind = "VITE_DIGIFLASHCARDS_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiflip]
 name.en = "digiflip"
@@ -93,7 +93,7 @@ name.en = "digiflip"
     ask.en = "digiflip api url"
     type = "url"
     bind = "VITE_DIGIFLIP_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digilink]
 name.en = "digilink"
@@ -105,7 +105,7 @@ name.en = "digilink"
     ask.en = "digilink api url"
     type = "url"
     bind = "VITE_DIGILINK_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digilock]
 name.en = "digilock"
@@ -117,7 +117,7 @@ name.en = "digilock"
     ask.en = "digilock api url"
     type = "url"
     bind = "VITE_DIGILOCK_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digimindmap]
 name.en = "digimindmap"
@@ -129,7 +129,7 @@ name.en = "digimindmap"
     ask.en = "digimindmap api url"
     type = "url"
     bind = "VITE_DIGIMINDMAP_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digipad]
 name.en = "digipad"
@@ -141,7 +141,7 @@ name.en = "digipad"
     ask.en = "digipad api url"
     type = "url"
     bind = "VITE_DIGIPAD_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digipage]
 name.en = "digipage"
@@ -153,7 +153,7 @@ name.en = "digipage"
     ask.en = "digipage api url"
     type = "url"
     bind = "VITE_DIGIPAGE_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiwall]
 name.en = "digiwall"
@@ -165,7 +165,7 @@ name.en = "digiwall"
     ask.en = "digiwall api url"
     type = "url"
     bind = "VITE_DIGIWALL_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiquiz]
 name.en = "digiquiz"
@@ -177,7 +177,7 @@ name.en = "digiquiz"
     ask.en = "digiquiz api url"
     type = "url"
     bind = "VITE_DIGIQUIZ_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiread]
 name.en = "digiread"
@@ -189,7 +189,7 @@ name.en = "digiread"
     ask.en = "digiread api url"
     type = "url"
     bind = "VITE_DIGIREAD_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digirecord]
 name.en = "digirecord"
@@ -201,7 +201,7 @@ name.en = "digirecord"
     ask.en = "digirecord api url"
     type = "url"
     bind = "VITE_DIGIRECORD_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiscreen]
 name.en = "digiscreen"
@@ -213,7 +213,7 @@ name.en = "digiscreen"
     ask.en = "digiscreen api url"
     type = "url"
     bind = "VITE_DIGISCREEN_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
   [main.digiscreen.digiscreen_s3]
     ask.en = "digiscreen s3 url"
     type = "url"
@@ -229,7 +229,7 @@ name.en = "digislides"
     ask.en = "digislides api url"
     type = "url"
     bind = "VITE_DIGISLIDES_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digislot]
 name.en = "digislot"
@@ -241,7 +241,7 @@ name.en = "digislot"
     ask.en = "digislot api url"
     type = "url"
     bind = "VITE_DIGISLOT_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digisteps]
 name.en = "digisteps"
@@ -253,7 +253,7 @@ name.en = "digisteps"
     ask.en = "digisteps api url"
     type = "url"
     bind = "VITE_DIGISTEPS_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digistorm]
 name.en = "digistorm"
@@ -265,7 +265,7 @@ name.en = "digistorm"
     ask.en = "digistorm api url"
     type = "url"
     bind = "VITE_DIGISTORM_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digistrip]
 name.en = "digistrip"
@@ -277,7 +277,7 @@ name.en = "digistrip"
     ask.en = "digistrip api url"
     type = "url"
     bind = "VITE_DIGISTRIP_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiview]
 name.en = "digiview"
@@ -289,7 +289,7 @@ name.en = "digiview"
     ask.en = "digiview api url"
     type = "url"
     bind = "VITE_DIGIVIEW_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 [main.digiwords]
 name.en = "digiwords"
@@ -301,7 +301,7 @@ name.en = "digiwords"
     ask.en = "digiwords api url"
     type = "url"
     bind = "VITE_DIGIWORDS_API:__INSTALL_DIR__/.env.production"
-    help.en = "mydomain.tld/inc/api.php"
+    help.en = "mydomain.tld/#/inc/api.php"
 
 #=========================================================
 # STORAGE
