@@ -292,36 +292,34 @@ name.fr = "Stockage S3"
 
 [main.storage.access_key_id]
 ask.en = "Bucket access key id"
-ask.fr = "Bucket access key id"
-help = "AWS_ACCESS_KEY_ID"
+ask.fr = "Access key id"
 type = "string"
 bind = "S3_ACCESS_KEY:__INSTALL_DIR__/.env.production"
 
 [main.storage.secret_access_key]
 ask.en = "Bucket secret access key"
-ask.fr = "Bucket secret access key"
-help = "AWS_SECRET_ACCESS_KEY"
+ask.fr = "Secret access key"
 type = "password"
 bind = "S3_SECRET_KEY:__INSTALL_DIR__/.env.production"
 
 [main.storage.AWS_STORAGE_BUCKET_NAME]
 ask.en = "Bucket name"
 ask.fr = "Nom du bucket"
-help = "AWS_STORAGE_BUCKET_NAME"
 type = "string"
 bind = "S3_BUCKET:__INSTALL_DIR__/.env.production"
 
 [main.storage.AWS_S3_REGION_NAME]
-ask = "AWS_S3_REGION_NAME"
+ask.fr = "Région"
+ask.en = "Region"
 type = "string"
 bind = "S3_REGION:__INSTALL_DIR__/.env.production"
 
 [main.storage.AWS_S3_ENDPOINT_URL]
 ask.en = "URL endpoint"
 ask.fr = "Url du point de terminaison"
-help = "AWS_S3_ENDPOINT_URL"
 type = "url"
 bind = "S3_ENDPOINT:__INSTALL_DIR__/.env.production"
+
 
 #=========================================================
 # REBUILD APP
