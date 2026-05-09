@@ -3,8 +3,10 @@ source /usr/share/yunohost/helpers
   
 run__rebuild() {
   pushd "$install_dir"
+    ynh_exec_as_app cp -pr  .env.production .env
   	ynh_hide_warnings ynh_exec_as_app npm run build
     chown -R $app:www-data "$install_dir"
+    ynh_systemctl --service="php$php_version-fpm" --action=reload
   popd
   ynh_print_info "The nginx config has been edited"
 }
