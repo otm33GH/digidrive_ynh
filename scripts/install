@@ -57,7 +57,7 @@ pushd "$install_dir"
 
 popd
 
-sqlite3 "$install_dir/inc/digidrive.db" "UPDATE digidrive_donnees SET password = '$password' WHERE id = 1;"
+sqlite3 "$install_dir/inc/digidrive.db" "UPDATE digidrive_donnees SET motdepasse = '$password' WHERE id = 1;"
 
 chown -R $app:www-data "$install_dir"
 
