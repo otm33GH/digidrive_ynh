@@ -1,0 +1,334 @@
+version = "1.0"
+
+[main]
+name.en = "Configuration panel"
+name.fr = "Panneau de configuration"
+
+[main.apps]
+name.en = "Adding applications"
+name.fr = "Ajout des applications"
+help.en = "You wiil need to rebuild app (pulling rebuild button) after saving app's url" 
+help.fr = "Il faudra recompiler l'application (bouton rebuild) après avoir enregistré les adresses des applications"
+
+
+#=========================================================
+# ADDING APPS URL
+#=========================================================
+[main.apps.digibunch]
+name.en = "digibunch"
+  [main.apps.digibunch.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIBUNCH_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digibunch.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIBUNCH_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digicalc]
+name.en = "digicalc"
+  [main.apps.digicalc.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGICALC_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digicalc.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGICALC_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digidiagram]
+name.en = "digidiagram"
+  [main.apps.digidiagram.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIDIAGRAM_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digidiagram.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIDIAGRAM_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digidoc]
+name.en = "digidoc"
+  [main.apps.digidoc.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIDOC_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digidoc.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIDOC_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiflashcards]
+name.en = "digiflashcards"
+  [main.apps.digiflashcards.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIFLASHCARDS_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiflashcards.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIFLASHCARDS_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiflip]
+name.en = "digiflip"
+  [main.apps.digiflip.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIFLIP_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiflip.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIFLIP_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digilink]
+name.en = "digilink"
+  [main.apps.digilink.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGILINK_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digilink.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGILINK_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digilock]
+name.en = "digilock"
+  [main.apps.digilock.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGILOCK_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digilock.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGILOCK_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digimindmap]
+name.en = "digimindmap"
+  [main.apps.digimindmap.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIMINDMAP_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digimindmap.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIMINDMAP_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digipad]
+name.en = "digipad"
+  [main.apps.digipad.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIPAD_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digipad.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIPAD_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digipage]
+name.en = "digipage"
+  [main.apps.digipage.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIPAGE_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digipage.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIPAGE_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiwall]
+name.en = "digiwall"
+  [main.apps.digiwall.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIWALL_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiwall.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIWALL_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiquiz]
+name.en = "digiquiz"
+  [main.apps.digiquiz.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIQUIZ_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiquiz.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIQUIZ_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiread]
+name.en = "digiread"
+  [main.apps.digiread.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIREAD_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiread.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIREAD_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digirecord]
+name.en = "digirecord"
+  [main.apps.digirecord.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIRECORD_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digirecord.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIRECORD_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiscreen]
+name.en = "digiscreen"
+  [main.apps.digiscreen.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISCREEN_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiscreen.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISCREEN_API:__INSTALL_DIR__/.env.production"
+  [main.apps.digiscreen.s3]
+  ask.en = "s3 url"
+  type = "url"
+  bind = "VITE_DIGISCREEN_S3:__INSTALL_DIR__/.env.production"
+
+[main.apps.digislides]
+name.en = "digislides"
+  [main.apps.digislides.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISLIDES_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digislides.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISLIDES_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digislot]
+name.en = "digislot"
+  [main.apps.digislot.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISLOT_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digislot.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISLOT_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digisteps]
+name.en = "digisteps"
+  [main.apps.digisteps.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISTEPS_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digisteps.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISTEPS_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digistorm]
+name.en = "digistorm"
+  [main.apps.digistorm.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISTORM_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digistorm.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISTORM_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digistrip]
+name.en = "digistrip"
+  [main.apps.digistrip.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGISTRIP_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digistrip.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGISTRIP_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiview]
+name.en = "digiview"
+  [main.apps.digiview.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIVIEW_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiview.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIVIEW_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiwords]
+name.en = "digiwords"
+  [main.apps.digiwords.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIWORDS_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiwords.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIWORDS_API:__INSTALL_DIR__/.env.production"
+
+[main.apps.digiboard]
+name.en = "digiboard"
+  [main.apps.digiboard.base]
+  ask.en = "url"
+  type = "url"
+  bind = "VITE_DIGIBOARD_BASE:__INSTALL_DIR__/.env.production"
+  [main.apps.digiboard.api]
+  ask.en = "api url"
+  type = "url"
+  bind = "VITE_DIGIBOARD_API:__INSTALL_DIR__/.env.production"
+
+#=========================================================
+# STORAGE
+#=========================================================
+
+[main.storage]
+name.en = "S3 storage"
+name.fr = "Stockage S3"
+
+[main.storage.access_key_id]
+ask.en = "Bucket access key id"
+ask.fr = "Bucket access key id"
+help = "AWS_ACCESS_KEY_ID"
+type = "string"
+bind = "S3_ACCESS_KEY:__INSTALL_DIR__/.env.production"
+
+[main.storage.secret_access_key]
+ask.en = "Bucket secret access key"
+ask.fr = "Bucket secret access key"
+help = "AWS_SECRET_ACCESS_KEY"
+type = "password"
+bind = "S3_SECRET_KEY:__INSTALL_DIR__/.env.production"
+
+[main.storage.AWS_STORAGE_BUCKET_NAME]
+ask.en = "Bucket name"
+ask.fr = "Nom du bucket"
+help = "AWS_STORAGE_BUCKET_NAME"
+type = "string"
+bind = "S3_BUCKET:__INSTALL_DIR__/.env.production"
+
+[main.storage.AWS_S3_REGION_NAME]
+ask = "AWS_S3_REGION_NAME"
+type = "string"
+bind = "S3_REGION:__INSTALL_DIR__/.env.production"
+
+[main.storage.AWS_S3_ENDPOINT_URL]
+ask.en = "URL endpoint"
+ask.fr = "Url du point de terminaison"
+help = "AWS_S3_ENDPOINT_URL"
+type = "url"
+bind = "S3_ENDPOINT:__INSTALL_DIR__/.env.production"
+
+#=========================================================
+# REBUILD APP
+#=========================================================
+
+[main.rebuild]
+ask.en = "rebuild app with modifications"
+ask.fr = "recompiler l'app avec les modifications"
+type = "button"
+bind = ""
