@@ -14,6 +14,8 @@ ynh_app_setting_set_default --key=php_upload_max_filesize --value=5G
 ynh_app_setting_set_default --key=php_post_max_size --value=5G
 email_smtp_host=$(cat /etc/yunohost/current_host)
 
+password=$(php -r "echo password_hash('$password', PASSWORD_BCRYPT);")
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -54,6 +56,8 @@ pushd "$install_dir"
 	mv inc/digidrive_sample.db inc/digidrive.db
 
 popd
+
+sqlite3 "$install_dir/inc/digidrive.db" "UPDATE digidrive_donnees SET password = '$password' WHERE id = 1;"
 
 chown -R $app:www-data "$install_dir"
 
