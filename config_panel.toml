@@ -3,284 +3,306 @@ version = "1.0"
 [main]
 name.en = "Configuration panel"
 name.fr = "Panneau de configuration"
-
-[main.apps]
-name.en = "Adding applications"
-name.fr = "Ajout des applications"
-help.en = "You wiil need to rebuild app (pulling rebuild button) after saving app's url" 
-help.fr = "Il faudra recompiler l'application (bouton rebuild) après avoir enregistré les adresses des applications"
+help.en = "You will need to rebuild app (pulling rebuild button) after saving settings"
+help.fr = "Il faudra recompiler l'application (bouton Recompiler) après avoir enregistré les changements"
 
 
 #=========================================================
 # ADDING APPS URL
 #=========================================================
-[main.apps.digibunch]
-name.en = "digibunch"
-  [main.apps.digibunch.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIBUNCH_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digibunch.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIBUNCH_API:__INSTALL_DIR__/.env.production"
 
-[main.apps.digicalc]
-name.en = "digicalc"
-  [main.apps.digicalc.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGICALC_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digicalc.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGICALC_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digidiagram]
-name.en = "digidiagram"
-  [main.apps.digidiagram.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIDIAGRAM_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digidiagram.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIDIAGRAM_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digidoc]
-name.en = "digidoc"
-  [main.apps.digidoc.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIDOC_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digidoc.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIDOC_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiflashcards]
-name.en = "digiflashcards"
-  [main.apps.digiflashcards.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIFLASHCARDS_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiflashcards.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIFLASHCARDS_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiflip]
-name.en = "digiflip"
-  [main.apps.digiflip.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIFLIP_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiflip.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIFLIP_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digilink]
-name.en = "digilink"
-  [main.apps.digilink.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGILINK_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digilink.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGILINK_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digilock]
-name.en = "digilock"
-  [main.apps.digilock.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGILOCK_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digilock.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGILOCK_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digimindmap]
-name.en = "digimindmap"
-  [main.apps.digimindmap.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIMINDMAP_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digimindmap.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIMINDMAP_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digipad]
-name.en = "digipad"
-  [main.apps.digipad.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIPAD_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digipad.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIPAD_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digipage]
-name.en = "digipage"
-  [main.apps.digipage.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIPAGE_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digipage.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIPAGE_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiwall]
-name.en = "digiwall"
-  [main.apps.digiwall.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIWALL_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiwall.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIWALL_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiquiz]
-name.en = "digiquiz"
-  [main.apps.digiquiz.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIQUIZ_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiquiz.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIQUIZ_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiread]
-name.en = "digiread"
-  [main.apps.digiread.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIREAD_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiread.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIREAD_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digirecord]
-name.en = "digirecord"
-  [main.apps.digirecord.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIRECORD_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digirecord.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIRECORD_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiscreen]
-name.en = "digiscreen"
-  [main.apps.digiscreen.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISCREEN_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiscreen.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISCREEN_API:__INSTALL_DIR__/.env.production"
-  [main.apps.digiscreen.s3]
-  ask.en = "s3 url"
-  type = "url"
-  bind = "VITE_DIGISCREEN_S3:__INSTALL_DIR__/.env.production"
-
-[main.apps.digislides]
-name.en = "digislides"
-  [main.apps.digislides.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISLIDES_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digislides.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISLIDES_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digislot]
-name.en = "digislot"
-  [main.apps.digislot.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISLOT_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digislot.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISLOT_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digisteps]
-name.en = "digisteps"
-  [main.apps.digisteps.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISTEPS_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digisteps.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISTEPS_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digistorm]
-name.en = "digistorm"
-  [main.apps.digistorm.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISTORM_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digistorm.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISTORM_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digistrip]
-name.en = "digistrip"
-  [main.apps.digistrip.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGISTRIP_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digistrip.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGISTRIP_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiview]
-name.en = "digiview"
-  [main.apps.digiview.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIVIEW_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiview.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIVIEW_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiwords]
-name.en = "digiwords"
-  [main.apps.digiwords.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIWORDS_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiwords.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIWORDS_API:__INSTALL_DIR__/.env.production"
-
-[main.apps.digiboard]
+[main.digiboard]
 name.en = "digiboard"
-  [main.apps.digiboard.base]
-  ask.en = "url"
-  type = "url"
-  bind = "VITE_DIGIBOARD_BASE:__INSTALL_DIR__/.env.production"
-  [main.apps.digiboard.api]
-  ask.en = "api url"
-  type = "url"
-  bind = "VITE_DIGIBOARD_API:__INSTALL_DIR__/.env.production"
+  [main.digiboard.base]
+    ask.en = "digiboard url"
+    type = "url"
+    bind = "VITE_DIGIBOARD_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiboard.api]
+    ask.en = "digiboard api url"
+    type = "url"
+    bind = "VITE_DIGIBOARD_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digibunch]
+name.en = "digibunch"
+  [main.digibunch.base]
+    ask.en = "digibunch url"
+    type = "url"
+    bind = "VITE_DIGIBUNCH_BASE:__INSTALL_DIR__/.env.production"
+  [main.digibunch.api]
+    ask.en = "digibunch api url"
+    type = "url"
+    bind = "VITE_DIGIBUNCH_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digicalc]
+name.en = "digicalc"
+  [main.digicalc.base]
+    ask.en = "digicalc url"
+    type = "url"
+    bind = "VITE_DIGICALC_BASE:__INSTALL_DIR__/.env.production"
+  [main.digicalc.api]
+    ask.en = "digicalc api url"
+    type = "url"
+    bind = "VITE_DIGICALC_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+
+[main.digidiagram]
+name.en = "digidiagram"
+  [main.digidiagram.base]
+    ask.en = "digidiagram url"
+    type = "url"
+    bind = "VITE_DIGIDIAGRAM_BASE:__INSTALL_DIR__/.env.production"
+  [main.digidiagram.api]
+    ask.en = "digidiagram api url"
+    type = "url"
+    bind = "VITE_DIGIDIAGRAM_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digidoc]
+name.en = "digidoc"
+  [main.digidoc.base]
+    ask.en = "digidoc url"
+    type = "url"
+    bind = "VITE_DIGIDOC_BASE:__INSTALL_DIR__/.env.production"
+  [main.digidoc.api]
+    ask.en = "digidoc api url"
+    type = "url"
+    bind = "VITE_DIGIDOC_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiflashcards]
+name.en = "digiflashcards"
+  [main.digiflashcards.base]
+    ask.en = "digiflashcards url"
+    type = "url"
+    bind = "VITE_DIGIFLASHCARDS_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiflashcards.api]
+    ask.en = "digiflashcards api url"
+    type = "url"
+    bind = "VITE_DIGIFLASHCARDS_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiflip]
+name.en = "digiflip"
+  [main.digiflip.base]
+    ask.en = "digiflip url"
+    type = "url"
+    bind = "VITE_DIGIFLIP_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiflip.api]
+    ask.en = "digiflip api url"
+    type = "url"
+    bind = "VITE_DIGIFLIP_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digilink]
+name.en = "digilink"
+  [main.digilink.base]
+    ask.en = "digilink url"
+    type = "url"
+    bind = "VITE_DIGILINK_BASE:__INSTALL_DIR__/.env.production"
+  [main.digilink.api]
+    ask.en = "digilink api url"
+    type = "url"
+    bind = "VITE_DIGILINK_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digilock]
+name.en = "digilock"
+  [main.digilock.base]
+    ask.en = "digilock url"
+    type = "url"
+    bind = "VITE_DIGILOCK_BASE:__INSTALL_DIR__/.env.production"
+  [main.digilock.api]
+    ask.en = "digilock api url"
+    type = "url"
+    bind = "VITE_DIGILOCK_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digimindmap]
+name.en = "digimindmap"
+  [main.digimindmap.base]
+    ask.en = "digimindmap url"
+    type = "url"
+    bind = "VITE_DIGIMINDMAP_BASE:__INSTALL_DIR__/.env.production"
+  [main.digimindmap.api]
+    ask.en = "digimindmap api url"
+    type = "url"
+    bind = "VITE_DIGIMINDMAP_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digipad]
+name.en = "digipad"
+  [main.digipad.base]
+    ask.en = "digipad url"
+    type = "url"
+    bind = "VITE_DIGIPAD_BASE:__INSTALL_DIR__/.env.production"
+  [main.digipad.api]
+    ask.en = "digipad api url"
+    type = "url"
+    bind = "VITE_DIGIPAD_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digipage]
+name.en = "digipage"
+  [main.digipage.base]
+    ask.en = "digipage url"
+    type = "url"
+    bind = "VITE_DIGIPAGE_BASE:__INSTALL_DIR__/.env.production"
+  [main.digipage.api]
+    ask.en = "digipage api url"
+    type = "url"
+    bind = "VITE_DIGIPAGE_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiwall]
+name.en = "digiwall"
+  [main.digiwall.base]
+    ask.en = "digiwall url"
+    type = "url"
+    bind = "VITE_DIGIWALL_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiwall.api]
+    ask.en = "digiwall api url"
+    type = "url"
+    bind = "VITE_DIGIWALL_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiquiz]
+name.en = "digiquiz"
+  [main.digiquiz.base]
+    ask.en = "digiquiz url"
+    type = "url"
+    bind = "VITE_DIGIQUIZ_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiquiz.api]
+    ask.en = "digiquiz api url"
+    type = "url"
+    bind = "VITE_DIGIQUIZ_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiread]
+name.en = "digiread"
+  [main.digiread.base]
+    ask.en = "digiread url"
+    type = "url"
+    bind = "VITE_DIGIREAD_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiread.api]
+    ask.en = "digiread api url"
+    type = "url"
+    bind = "VITE_DIGIREAD_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digirecord]
+name.en = "digirecord"
+  [main.digirecord.base]
+    ask.en = "digirecord url"
+    type = "url"
+    bind = "VITE_DIGIRECORD_BASE:__INSTALL_DIR__/.env.production"
+  [main.digirecord.api]
+    ask.en = "digirecord api url"
+    type = "url"
+    bind = "VITE_DIGIRECORD_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiscreen]
+name.en = "digiscreen"
+  [main.digiscreen.base]
+    ask.en = "digiscreen url"
+    type = "url"
+    bind = "VITE_DIGISCREEN_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiscreen.api]
+    ask.en = "digiscreen api url"
+    type = "url"
+    bind = "VITE_DIGISCREEN_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+  [main.digiscreen.s3]
+    ask.en = "digiscreen s3 url"
+    type = "url"
+    bind = "VITE_DIGISCREEN_S3:__INSTALL_DIR__/.env.production"
+
+[main.digislides]
+name.en = "digislides"
+  [main.digislides.base]
+    ask.en = "digislides url"
+    type = "url"
+    bind = "VITE_DIGISLIDES_BASE:__INSTALL_DIR__/.env.production"
+  [main.digislides.api]
+    ask.en = "digislides api url"
+    type = "url"
+    bind = "VITE_DIGISLIDES_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digislot]
+name.en = "digislot"
+  [main.digislot.base]
+    ask.en = "digislot url"
+    type = "url"
+    bind = "VITE_DIGISLOT_BASE:__INSTALL_DIR__/.env.production"
+  [main.digislot.api]
+    ask.en = "digislot api url"
+    type = "url"
+    bind = "VITE_DIGISLOT_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digisteps]
+name.en = "digisteps"
+  [main.digisteps.base]
+    ask.en = "digisteps url"
+    type = "url"
+    bind = "VITE_DIGISTEPS_BASE:__INSTALL_DIR__/.env.production"
+  [main.digisteps.api]
+    ask.en = "digisteps api url"
+    type = "url"
+    bind = "VITE_DIGISTEPS_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digistorm]
+name.en = "digistorm"
+  [main.digistorm.base]
+    ask.en = "digistorm url"
+    type = "url"
+    bind = "VITE_DIGISTORM_BASE:__INSTALL_DIR__/.env.production"
+  [main.digistorm.api]
+    ask.en = "digistorm api url"
+    type = "url"
+    bind = "VITE_DIGISTORM_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digistrip]
+name.en = "digistrip"
+  [main.digistrip.base]
+    ask.en = "digistrip url"
+    type = "url"
+    bind = "VITE_DIGISTRIP_BASE:__INSTALL_DIR__/.env.production"
+  [main.digistrip.api]
+    ask.en = "digistrip api url"
+    type = "url"
+    bind = "VITE_DIGISTRIP_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiview]
+name.en = "digiview"
+  [main.digiview.base]
+    ask.en = "digiview url"
+    type = "url"
+    bind = "VITE_DIGIVIEW_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiview.api]
+    ask.en = "digiview api url"
+    type = "url"
+    bind = "VITE_DIGIVIEW_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
+
+[main.digiwords]
+name.en = "digiwords"
+  [main.digiwords.base]
+    ask.en = "digiwords url"
+    type = "url"
+    bind = "VITE_DIGIWORDS_BASE:__INSTALL_DIR__/.env.production"
+  [main.digiwords.api]
+    ask.en = "digiwords api url"
+    type = "url"
+    bind = "VITE_DIGIWORDS_API:__INSTALL_DIR__/.env.production"
+    help.en = "mydomain.tld/inc/api.php"
 
 #=========================================================
 # STORAGE
@@ -325,8 +347,12 @@ bind = "S3_ENDPOINT:__INSTALL_DIR__/.env.production"
 # REBUILD APP
 #=========================================================
 
-[main.rebuild]
-ask.en = "rebuild app with modifications"
-ask.fr = "recompiler l'app avec les modifications"
+[main.build]
+name.en = "Rebuild app with modifications"
+name.fr = "Recompiler l'app avec les modifications"
+
+[main.build.rebuild]
+ask.fr = "Recompiler"
+ask.en = "Rebuild"
+style = "success"
 type = "button"
-style = "danger"
