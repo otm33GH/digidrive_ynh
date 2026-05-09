@@ -1,0 +1,11 @@
+#!/bin/bash
+source /usr/share/yunohost/helpers
+  
+set__rebuild() {
+  pushd "$install_dir"
+  	ynh_hide_warnings ynh_exec_as_app npm run build
+  popd
+  ynh_print_info "The nginx config has been edited"
+}
+ynh_abort_if_errors
+ynh_app_config_run $1
