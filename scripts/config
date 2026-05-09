@@ -8,7 +8,7 @@ run__rebuild() {
     chown -R $app:www-data "$install_dir"
     ynh_systemctl --service="php$php_version-fpm" --action=reload
   popd
-  ynh_print_info "The nginx config has been edited"
+  ynh_print_info "$app has been rebuilded"
 }
 ynh_abort_if_errors
 ynh_app_config_run $1
