@@ -4,6 +4,7 @@ source /usr/share/yunohost/helpers
 run__rebuild() {
   pushd "$install_dir"
   	ynh_hide_warnings ynh_exec_as_app npm run build
+    chown -R $app:www-data "$install_dir"
   popd
   ynh_print_info "The nginx config has been edited"
 }
